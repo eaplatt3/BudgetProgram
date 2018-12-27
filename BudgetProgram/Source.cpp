@@ -19,6 +19,12 @@ using namespace std;
 
 int main() {
 
+	double pay;
+
+	cout << "Your Budget" << endl;
+	cout << "-----------" << endl;
+	cout << " " << endl;
+
 
 
 
