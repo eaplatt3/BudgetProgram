@@ -24,7 +24,24 @@ int main() {
 	cout << "Your Budget" << endl;
 	cout << "-----------" << endl;
 	cout << " " << endl;
+	cout << "Enter Monthly Pay: $";
+	cin >> pay;
 
+	while (cin.fail())
+	{
+		cout << "Invalid Input Please Re-enter Your Monthly Pay" << endl;
+		cin.clear();
+		cin.ignore(256, '\n');
+		cin >> pay;
+	}
+
+	cout << " " << endl;
+	cout << "Monthly Pay..............................$" << pay << endl;
+	cout << " " << endl;
+	cout << "Expenses" << endl;
+	cout << "-------------------------------------------------------" << endl;
+	cout << "Mortgage/Rent............................$" << endl;
+	cout << "Car Expenses.............................$" << endl;
 
 
 
