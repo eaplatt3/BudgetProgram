@@ -43,6 +43,9 @@ int main() {
 	cout << "Mortgage/Rent............................$" << endl;
 	cout << "Car Expenses.............................$" << endl;
 	cout << "Phone Expense............................$" << endl;
+	cout << "Credit Card..............................$" << endl;
+	cout << "Miscellaneous Expense....................$" << endl;
+	cout << "Total....................................$" << endl;
 
 
 
