@@ -20,6 +20,13 @@ using namespace std;
 int main() {
 
 	double pay;
+	double rent;
+	double carExp;
+	double phoneExp;
+	double credCardExp;
+	double misExp;
+	double tot;
+
 
 	cout << "Your Budget" << endl;
 	cout << "-----------" << endl;
@@ -35,13 +42,35 @@ int main() {
 		cin >> pay;
 	}
 
+	cout << "Enter Rent/Mortgage Cost: $";
+	cin >> rent;
+
+	while (cin.fail())
+	{
+		cout << "Invalid Input Please Re-enter Your Monthly Pay" << endl;
+		cin.clear();
+		cin.ignore(256, '\n');
+		cin >> rent;
+	}
+
+	cout << "Enter Car Expenses: $";
+	cin >> carExp;
+
+	while (cin.fail())
+	{
+		cout << "Invalid Input Please Re-enter Your Monthly Pay" << endl;
+		cin.clear();
+		cin.ignore(256, '\n');
+		cin >> carExp;
+	}
+
 	cout << " " << endl;
 	cout << "Monthly Pay..............................$" << pay << endl;
 	cout << " " << endl;
 	cout << "Expenses" << endl;
 	cout << "-------------------------------------------------------" << endl;
-	cout << "Mortgage/Rent............................$" << endl;
-	cout << "Car Expenses.............................$" << endl;
+	cout << "Mortgage/Rent............................$" << rent << endl;
+	cout << "Car Expenses.............................$" << carExp << endl;
 	cout << "Phone Expense............................$" << endl;
 	cout << "Credit Card..............................$" << endl;
 	cout << "Miscellaneous Expense....................$" << endl;
